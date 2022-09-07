@@ -14,7 +14,7 @@ function authenticateToken(req, res, next) {
 }
 
 function generateAccessToken(username) {
-    jwt.sign({data: username}, "theSecretKey", {
+    return jwt.sign({data: username}, "theSecretKey", {
         expiresIn: "1h"
     });
 }
