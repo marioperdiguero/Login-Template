@@ -8,8 +8,8 @@ Working on the next task: JWT and Middleware Errors
 ## 📃 Project task list
 
 - ✅ Folder Structures
-- 🚧 JWT & Errors Middleware
-- ❌ User Controller
+- ✅ JWT & Errors Middleware
+- 🚧 User Controller
 - ❌ API Routing
 - ❌ User Model
 - ❌ User Service
