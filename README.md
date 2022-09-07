@@ -9,11 +9,11 @@ Working on the next task: JWT and Middleware Errors
 
 - ✅ Folder Structures
 - ✅ JWT & Errors Middleware
-- 🚧 User Controller
-- ❌ API Routing
-- ❌ User Model
-- ❌ User Service
-- ❌ API Testing
+- ✅ User Controller
+- ✅ API Routing
+- ✅ User Model
+- ✅ User Service
+- 🚧 API Testing
 
 
 
