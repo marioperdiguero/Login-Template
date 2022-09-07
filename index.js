@@ -5,7 +5,7 @@ const dbConfig = require('./config/db.config');
 const auth = require('./middlewares/auth');
 const errors = require('./middlewares/errors');
 
-const unless = require('express-unless');
+const {unless} = require('express-unless');
 
 const app = express();
 
@@ -34,7 +34,7 @@ app.use(
 
 app.use(express.json());
 
-app.use("/users", require("./routes/user.routes"));
+app.use("/users", require("./routes/users.routes"));
 
 app.use(errors.errorHandler);
 
