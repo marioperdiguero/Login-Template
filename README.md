@@ -4,7 +4,7 @@
 A simple login and register template with Node Js
 ## 🛠 Project status
 
-Working on the next task: JWT and Middleware Errors
+Project finished and ready to use
 ## 📃 Project task list
 
 - ✅ Folder Structures
@@ -13,7 +13,7 @@ Working on the next task: JWT and Middleware Errors
 - ✅ API Routing
 - ✅ User Model
 - ✅ User Service
-- 🚧 API Testing
+- ✅ API Testing
 
 
 
@@ -50,6 +50,40 @@ Start the server
   npm run start
 ```
 
+## 🔎 API Reference
+
+#### Register New User
+
+```http
+  POST /users/register
+```
+##### Http Body:
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `username` | `string` | **Required**. The user name |
+| `password` | `string` | **Required**. The user password |
+| `email` | `string` | **Required**. The user email |
+
+#### Login User
+
+```http
+  POST /users/login
+```
+##### Http Body:
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `username` | `string` | **Required**. The user name |
+| `password` | `string` | **Required**. The user password |
+
+#### Example of page protected by authentication
+
+```http
+  GET /users/user-profile
+```
+##### Http Headers:
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `Authorization` | `string` | **Required**. Basic + JWT Token of user |
 
 ## Authors
 
